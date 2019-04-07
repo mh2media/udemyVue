@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Vue App</title>
+       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+            <div id="app">
+            <button class="vue-btn" @click="Reveal">Reveal the Secret Number</button>
+            <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    secretNumber: Math.floor(Math.random() *100) +1
+                },
+                  methods: {
+                      Reveal() {
+                        alert(`Here's the secret number: ${this.secretNumber}`) 
+                      }
+                  } 
+            })
+            </script>
+    </body>
+
+</html>
