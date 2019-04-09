@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Vue App</title>
+       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+            <div id="app">
+              <div class="">
+                  Hello World
+              </div>
+            </div>
+            <script>
+                var app = new Vue({
+      el: '#app',
+      data: {    
+
+      },
+      methods: {
+          alertTime() {
+              alert(`The time is ${Date.now().toLocaleString()}`)
+          }
+      },
+      // Created hook = renders when page is created
+      created() {
+          this.alertTime()
+      },
+      // mounted hook = renders after created when page is 'mounted'
+      mounted() {
+          this.alertTime()
+      },
+       })
+            </script>
+    </body>
+
+</html>
