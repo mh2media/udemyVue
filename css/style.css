@@ -11,3 +11,17 @@ width: 40%;
 margin: 0 auto;
 text-align: left;
 }
+
+.note {
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin:20px;
+    padding: 12px;
+    text-align: left;
+}
+
+.close {
+    margin-top: -20px;
+    font-size: xx-large;
+    color: #666;
+}
